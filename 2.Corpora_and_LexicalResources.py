@@ -52,3 +52,15 @@ wordlists = PlaintextCorpusReader(corpus_root, '.*')
 
 # WordNet
 # Semantically-oriented dictionary
+from nltk.corpus import wordnet as wn
+wn.synsets('motorcar')
+wn.synset('car.n.01').lemma_names()
+wn.synset('car.n.01').definition()
+wn.synset('car.n.01').examples()
+
+# Ambiguity
+for synset in wn.synsets('car'):
+    print(synset.lemma_names())
+
+# Spanish WordNet
+# https://www.researchgate.net/publication/265535119_The_Spanish_Version_of_WordNet_30

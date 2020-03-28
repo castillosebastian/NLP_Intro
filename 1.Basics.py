@@ -58,4 +58,4 @@ from nltk.util import bigrams
 list(bigrams(['more', 'is', 'said', 'than', 'done']))
 
 # Complex function
-len(set(word.lower() for word in text1 if word.isalpha()))
+len(set(word.lower() for word in text1 if   word.isalpha()))
